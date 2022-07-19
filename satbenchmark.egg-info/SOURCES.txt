@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+satbenchmark.egg-info/PKG-INFO
+satbenchmark.egg-info/SOURCES.txt
+satbenchmark.egg-info/dependency_links.txt
+satbenchmark.egg-info/requires.txt
+satbenchmark.egg-info/top_level.txt
