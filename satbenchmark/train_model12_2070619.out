@@ -1,0 +1,748 @@
+/home/mila/z/zhaoyu.li/venv/lib/python3.8/site-packages/_distutils_hack/__init__.py:17: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/home/mila/z/zhaoyu.li/venv/lib/python3.8/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+/home/mila/z/zhaoyu.li/venv/lib/python3.8/site-packages/torch/nn/functional.py:1944: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+Namespace(activation='relu', aggregator='sum', batch_size=64, checkpoint_dir='runs/task=satisfiability_difficulty=easy_dataset=sr_split=None_label=satisfiability_loss=None/graph=lcg_init_emb=learned_aggregator=sum_updater=gru_n_iterations=16/checkpoints', clip_norm=0.65, device=device(type='cuda'), dim=64, epochs=100, graph='lcg', init_emb='learned', label='satisfiability', log='runs/task=satisfiability_difficulty=easy_dataset=sr_split=None_label=satisfiability_loss=None/graph=lcg_init_emb=learned_aggregator=sum_updater=gru_n_iterations=16/log.txt', log_dir='runs/task=satisfiability_difficulty=easy_dataset=sr_split=None_label=satisfiability_loss=None/graph=lcg_init_emb=learned_aggregator=sum_updater=gru_n_iterations=16', loss=None, lr=0.0001, lr_factor=0.5, lr_patience=20, lr_step_size=200, n_iterations=16, n_mlp_layers=2, num_workers=8, save_model_epochs=1, scheduler=None, seed=0, split=None, task='satisfiability', train_dir='/home/mila/z/zhaoyu.li/scratch/satbenchmark/easy/sr/train', updater='gru', valid_dir='/home/mila/z/zhaoyu.li/scratch/satbenchmark/easy/sr/valid', weight_dacay=1e-10)
+EPOCH #0
+Training...
+Training LR: 0.000100, Training loss: 0.693387
+Training accuracy: 0.498962
+Validating...
+Validating loss: 0.693152
+Validating accuracy: 0.500000
+EPOCH #1
+Training...
+Training LR: 0.000100, Training loss: 0.693260
+Training accuracy: 0.498019
+Validating...
+Validating loss: 0.693160
+Validating accuracy: 0.500000
+EPOCH #2
+Training...
+Training LR: 0.000100, Training loss: 0.693190
+Training accuracy: 0.500287
+Validating...
+Validating loss: 0.693220
+Validating accuracy: 0.500000
+EPOCH #3
+Training...
+Training LR: 0.000100, Training loss: 0.693207
+Training accuracy: 0.501325
+Validating...
+Validating loss: 0.693178
+Validating accuracy: 0.499900
+EPOCH #4
+Training...
+Training LR: 0.000100, Training loss: 0.693171
+Training accuracy: 0.498525
+Validating...
+Validating loss: 0.694245
+Validating accuracy: 0.500000
+EPOCH #5
+Training...
+Training LR: 0.000100, Training loss: 0.693223
+Training accuracy: 0.499175
+Validating...
+Validating loss: 0.693144
+Validating accuracy: 0.500550
+EPOCH #6
+Training...
+Training LR: 0.000100, Training loss: 0.693158
+Training accuracy: 0.501300
+Validating...
+Validating loss: 0.693131
+Validating accuracy: 0.503600
+EPOCH #7
+Training...
+Training LR: 0.000100, Training loss: 0.693157
+Training accuracy: 0.500762
+Validating...
+Validating loss: 0.693126
+Validating accuracy: 0.504600
+EPOCH #8
+Training...
+Training LR: 0.000100, Training loss: 0.693145
+Training accuracy: 0.502894
+Validating...
+Validating loss: 0.693089
+Validating accuracy: 0.503350
+EPOCH #9
+Training...
+Training LR: 0.000100, Training loss: 0.693052
+Training accuracy: 0.505700
+Validating...
+Validating loss: 0.692429
+Validating accuracy: 0.531200
+EPOCH #10
+Training...
+Training LR: 0.000100, Training loss: 0.677776
+Training accuracy: 0.553000
+Validating...
+Validating loss: 0.662455
+Validating accuracy: 0.587450
+EPOCH #11
+Training...
+Training LR: 0.000100, Training loss: 0.652320
+Training accuracy: 0.589538
+Validating...
+Validating loss: 0.680382
+Validating accuracy: 0.555700
+EPOCH #12
+Training...
+Training LR: 0.000100, Training loss: 0.650815
+Training accuracy: 0.592169
+Validating...
+Validating loss: 0.631077
+Validating accuracy: 0.611100
+EPOCH #13
+Training...
+Training LR: 0.000100, Training loss: 0.634761
+Training accuracy: 0.608463
+Validating...
+Validating loss: 0.627349
+Validating accuracy: 0.611200
+EPOCH #14
+Training...
+Training LR: 0.000100, Training loss: 0.626858
+Training accuracy: 0.616244
+Validating...
+Validating loss: 0.612486
+Validating accuracy: 0.628300
+EPOCH #15
+Training...
+Training LR: 0.000100, Training loss: 0.620801
+Training accuracy: 0.623225
+Validating...
+Validating loss: 0.622397
+Validating accuracy: 0.628250
+EPOCH #16
+Training...
+Training LR: 0.000100, Training loss: 0.615611
+Training accuracy: 0.628637
+Validating...
+Validating loss: 0.605645
+Validating accuracy: 0.637700
+EPOCH #17
+Training...
+Training LR: 0.000100, Training loss: 0.613150
+Training accuracy: 0.629331
+Validating...
+Validating loss: 0.605756
+Validating accuracy: 0.633750
+EPOCH #18
+Training...
+Training LR: 0.000100, Training loss: 0.610016
+Training accuracy: 0.633519
+Validating...
+Validating loss: 0.600542
+Validating accuracy: 0.640800
+EPOCH #19
+Training...
+Training LR: 0.000100, Training loss: 0.606484
+Training accuracy: 0.636506
+Validating...
+Validating loss: 0.595909
+Validating accuracy: 0.649200
+EPOCH #20
+Training...
+Training LR: 0.000100, Training loss: 0.605154
+Training accuracy: 0.638356
+Validating...
+Validating loss: 0.598972
+Validating accuracy: 0.645250
+EPOCH #21
+Training...
+Training LR: 0.000100, Training loss: 0.601661
+Training accuracy: 0.641112
+Validating...
+Validating loss: 0.595738
+Validating accuracy: 0.652350
+EPOCH #22
+Training...
+Training LR: 0.000100, Training loss: 0.601502
+Training accuracy: 0.641487
+Validating...
+Validating loss: 0.591664
+Validating accuracy: 0.651250
+EPOCH #23
+Training...
+Training LR: 0.000100, Training loss: 0.598977
+Training accuracy: 0.643663
+Validating...
+Validating loss: 0.597899
+Validating accuracy: 0.647150
+EPOCH #24
+Training...
+Training LR: 0.000100, Training loss: 0.596953
+Training accuracy: 0.645262
+Validating...
+Validating loss: 0.589170
+Validating accuracy: 0.656150
+EPOCH #25
+Training...
+Training LR: 0.000100, Training loss: 0.595794
+Training accuracy: 0.646312
+Validating...
+Validating loss: 0.591571
+Validating accuracy: 0.651850
+EPOCH #26
+Training...
+Training LR: 0.000100, Training loss: 0.594126
+Training accuracy: 0.648081
+Validating...
+Validating loss: 0.594402
+Validating accuracy: 0.652450
+EPOCH #27
+Training...
+Training LR: 0.000100, Training loss: 0.594237
+Training accuracy: 0.649369
+Validating...
+Validating loss: 0.593284
+Validating accuracy: 0.650050
+EPOCH #28
+Training...
+Training LR: 0.000100, Training loss: 0.593313
+Training accuracy: 0.650281
+Validating...
+Validating loss: 0.584160
+Validating accuracy: 0.656800
+EPOCH #29
+Training...
+Training LR: 0.000100, Training loss: 0.592063
+Training accuracy: 0.649062
+Validating...
+Validating loss: 0.588375
+Validating accuracy: 0.653350
+EPOCH #30
+Training...
+Training LR: 0.000100, Training loss: 0.590682
+Training accuracy: 0.650281
+Validating...
+Validating loss: 0.584922
+Validating accuracy: 0.656950
+EPOCH #31
+Training...
+Training LR: 0.000100, Training loss: 0.589635
+Training accuracy: 0.652306
+Validating...
+Validating loss: 0.582316
+Validating accuracy: 0.659500
+EPOCH #32
+Training...
+Training LR: 0.000100, Training loss: 0.588632
+Training accuracy: 0.652825
+Validating...
+Validating loss: 0.581469
+Validating accuracy: 0.660900
+EPOCH #33
+Training...
+Training LR: 0.000100, Training loss: 0.587113
+Training accuracy: 0.654250
+Validating...
+Validating loss: 0.594032
+Validating accuracy: 0.653800
+EPOCH #34
+Training...
+Training LR: 0.000100, Training loss: 0.588067
+Training accuracy: 0.654006
+Validating...
+Validating loss: 0.582479
+Validating accuracy: 0.657150
+EPOCH #35
+Training...
+Training LR: 0.000100, Training loss: 0.587517
+Training accuracy: 0.654256
+Validating...
+Validating loss: 0.593792
+Validating accuracy: 0.649200
+EPOCH #36
+Training...
+Training LR: 0.000100, Training loss: 0.585745
+Training accuracy: 0.655694
+Validating...
+Validating loss: 0.590541
+Validating accuracy: 0.649600
+EPOCH #37
+Training...
+Training LR: 0.000100, Training loss: 0.585861
+Training accuracy: 0.654731
+Validating...
+Validating loss: 0.577117
+Validating accuracy: 0.666150
+EPOCH #38
+Training...
+Training LR: 0.000100, Training loss: 0.584767
+Training accuracy: 0.656394
+Validating...
+Validating loss: 0.576588
+Validating accuracy: 0.663400
+EPOCH #39
+Training...
+Training LR: 0.000100, Training loss: 0.584654
+Training accuracy: 0.656250
+Validating...
+Validating loss: 0.584033
+Validating accuracy: 0.660600
+EPOCH #40
+Training...
+Training LR: 0.000100, Training loss: 0.584269
+Training accuracy: 0.658312
+Validating...
+Validating loss: 0.577106
+Validating accuracy: 0.664700
+EPOCH #41
+Training...
+Training LR: 0.000100, Training loss: 0.583457
+Training accuracy: 0.657319
+Validating...
+Validating loss: 0.580661
+Validating accuracy: 0.662200
+EPOCH #42
+Training...
+Training LR: 0.000100, Training loss: 0.582343
+Training accuracy: 0.659556
+Validating...
+Validating loss: 0.584596
+Validating accuracy: 0.660100
+EPOCH #43
+Training...
+Training LR: 0.000100, Training loss: 0.582395
+Training accuracy: 0.658950
+Validating...
+Validating loss: 0.583833
+Validating accuracy: 0.650350
+EPOCH #44
+Training...
+Training LR: 0.000100, Training loss: 0.582185
+Training accuracy: 0.659506
+Validating...
+Validating loss: 0.582637
+Validating accuracy: 0.662200
+EPOCH #45
+Training...
+Training LR: 0.000100, Training loss: 0.581426
+Training accuracy: 0.659537
+Validating...
+Validating loss: 0.576536
+Validating accuracy: 0.669200
+EPOCH #46
+Training...
+Training LR: 0.000100, Training loss: 0.579706
+Training accuracy: 0.661600
+Validating...
+Validating loss: 0.575680
+Validating accuracy: 0.661700
+EPOCH #47
+Training...
+Training LR: 0.000100, Training loss: 0.581013
+Training accuracy: 0.660212
+Validating...
+Validating loss: 0.573263
+Validating accuracy: 0.668900
+EPOCH #48
+Training...
+Training LR: 0.000100, Training loss: 0.580246
+Training accuracy: 0.659250
+Validating...
+Validating loss: 0.577345
+Validating accuracy: 0.661350
+EPOCH #49
+Training...
+Training LR: 0.000100, Training loss: 0.579933
+Training accuracy: 0.660169
+Validating...
+Validating loss: 0.592822
+Validating accuracy: 0.636450
+EPOCH #50
+Training...
+Training LR: 0.000100, Training loss: 0.580193
+Training accuracy: 0.660356
+Validating...
+Validating loss: 0.573040
+Validating accuracy: 0.667700
+EPOCH #51
+Training...
+Training LR: 0.000100, Training loss: 0.578396
+Training accuracy: 0.662344
+Validating...
+Validating loss: 0.572835
+Validating accuracy: 0.669350
+EPOCH #52
+Training...
+Training LR: 0.000100, Training loss: 0.579572
+Training accuracy: 0.661062
+Validating...
+Validating loss: 0.576684
+Validating accuracy: 0.662050
+EPOCH #53
+Training...
+Training LR: 0.000100, Training loss: 0.578058
+Training accuracy: 0.662950
+Validating...
+Validating loss: 0.577095
+Validating accuracy: 0.665550
+EPOCH #54
+Training...
+Training LR: 0.000100, Training loss: 0.577352
+Training accuracy: 0.662169
+Validating...
+Validating loss: 0.585515
+Validating accuracy: 0.655750
+EPOCH #55
+Training...
+Training LR: 0.000100, Training loss: 0.577972
+Training accuracy: 0.664469
+Validating...
+Validating loss: 0.571706
+Validating accuracy: 0.667500
+EPOCH #56
+Training...
+Training LR: 0.000100, Training loss: 0.576684
+Training accuracy: 0.664188
+Validating...
+Validating loss: 0.572591
+Validating accuracy: 0.668700
+EPOCH #57
+Training...
+Training LR: 0.000100, Training loss: 0.577056
+Training accuracy: 0.663100
+Validating...
+Validating loss: 0.574915
+Validating accuracy: 0.664350
+EPOCH #58
+Training...
+Training LR: 0.000100, Training loss: 0.577121
+Training accuracy: 0.663863
+Validating...
+Validating loss: 0.577593
+Validating accuracy: 0.665400
+EPOCH #59
+Training...
+Training LR: 0.000100, Training loss: 0.577311
+Training accuracy: 0.662325
+Validating...
+Validating loss: 0.580086
+Validating accuracy: 0.652800
+EPOCH #60
+Training...
+Training LR: 0.000100, Training loss: 0.576358
+Training accuracy: 0.663894
+Validating...
+Validating loss: 0.577525
+Validating accuracy: 0.660700
+EPOCH #61
+Training...
+Training LR: 0.000100, Training loss: 0.576856
+Training accuracy: 0.663231
+Validating...
+Validating loss: 0.573338
+Validating accuracy: 0.670700
+EPOCH #62
+Training...
+Training LR: 0.000100, Training loss: 0.575318
+Training accuracy: 0.663819
+Validating...
+Validating loss: 0.571747
+Validating accuracy: 0.666850
+EPOCH #63
+Training...
+Training LR: 0.000100, Training loss: 0.576804
+Training accuracy: 0.662312
+Validating...
+Validating loss: 0.580126
+Validating accuracy: 0.664750
+EPOCH #64
+Training...
+Training LR: 0.000100, Training loss: 0.574698
+Training accuracy: 0.666331
+Validating...
+Validating loss: 0.575212
+Validating accuracy: 0.667100
+EPOCH #65
+Training...
+Training LR: 0.000100, Training loss: 0.574766
+Training accuracy: 0.664813
+Validating...
+Validating loss: 0.574520
+Validating accuracy: 0.665150
+EPOCH #66
+Training...
+Training LR: 0.000100, Training loss: 0.574654
+Training accuracy: 0.664131
+Validating...
+Validating loss: 0.574497
+Validating accuracy: 0.665600
+EPOCH #67
+Training...
+Training LR: 0.000100, Training loss: 0.574198
+Training accuracy: 0.666644
+Validating...
+Validating loss: 0.577843
+Validating accuracy: 0.659700
+EPOCH #68
+Training...
+Training LR: 0.000100, Training loss: 0.573985
+Training accuracy: 0.666081
+Validating...
+Validating loss: 0.571843
+Validating accuracy: 0.664000
+EPOCH #69
+Training...
+Training LR: 0.000100, Training loss: 0.573149
+Training accuracy: 0.668300
+Validating...
+Validating loss: 0.575999
+Validating accuracy: 0.664000
+EPOCH #70
+Training...
+Training LR: 0.000100, Training loss: 0.572644
+Training accuracy: 0.667100
+Validating...
+Validating loss: 0.571317
+Validating accuracy: 0.660750
+EPOCH #71
+Training...
+Training LR: 0.000100, Training loss: 0.572466
+Training accuracy: 0.666919
+Validating...
+Validating loss: 0.571262
+Validating accuracy: 0.666550
+EPOCH #72
+Training...
+Training LR: 0.000100, Training loss: 0.573481
+Training accuracy: 0.665388
+Validating...
+Validating loss: 0.580056
+Validating accuracy: 0.659950
+EPOCH #73
+Training...
+Training LR: 0.000100, Training loss: 0.573724
+Training accuracy: 0.665562
+Validating...
+Validating loss: 0.569422
+Validating accuracy: 0.672900
+EPOCH #74
+Training...
+Training LR: 0.000100, Training loss: 0.572325
+Training accuracy: 0.667787
+Validating...
+Validating loss: 0.572327
+Validating accuracy: 0.667950
+EPOCH #75
+Training...
+Training LR: 0.000100, Training loss: 0.570911
+Training accuracy: 0.667562
+Validating...
+Validating loss: 0.570867
+Validating accuracy: 0.661950
+EPOCH #76
+Training...
+Training LR: 0.000100, Training loss: 0.571054
+Training accuracy: 0.668350
+Validating...
+Validating loss: 0.571491
+Validating accuracy: 0.669750
+EPOCH #77
+Training...
+Training LR: 0.000100, Training loss: 0.573519
+Training accuracy: 0.667181
+Validating...
+Validating loss: 0.573318
+Validating accuracy: 0.672900
+EPOCH #78
+Training...
+Training LR: 0.000100, Training loss: 0.574029
+Training accuracy: 0.665581
+Validating...
+Validating loss: 0.568375
+Validating accuracy: 0.671500
+EPOCH #79
+Training...
+Training LR: 0.000100, Training loss: 0.571467
+Training accuracy: 0.667744
+Validating...
+Validating loss: 0.570357
+Validating accuracy: 0.665650
+EPOCH #80
+Training...
+Training LR: 0.000100, Training loss: 0.571434
+Training accuracy: 0.667081
+Validating...
+Validating loss: 0.567628
+Validating accuracy: 0.669750
+EPOCH #81
+Training...
+Training LR: 0.000100, Training loss: 0.569947
+Training accuracy: 0.668881
+Validating...
+Validating loss: 0.574025
+Validating accuracy: 0.663550
+EPOCH #82
+Training...
+Training LR: 0.000100, Training loss: 0.570756
+Training accuracy: 0.668394
+Validating...
+Validating loss: 0.571155
+Validating accuracy: 0.670950
+EPOCH #83
+Training...
+Training LR: 0.000100, Training loss: 0.569918
+Training accuracy: 0.669281
+Validating...
+Validating loss: 0.568670
+Validating accuracy: 0.671050
+EPOCH #84
+Training...
+Training LR: 0.000100, Training loss: 0.569903
+Training accuracy: 0.668519
+Validating...
+Validating loss: 0.567663
+Validating accuracy: 0.672500
+EPOCH #85
+Training...
+Training LR: 0.000100, Training loss: 0.569619
+Training accuracy: 0.669481
+Validating...
+Validating loss: 0.575654
+Validating accuracy: 0.664800
+EPOCH #86
+Training...
+Training LR: 0.000100, Training loss: 0.570501
+Training accuracy: 0.668863
+Validating...
+Validating loss: 0.580077
+Validating accuracy: 0.656650
+EPOCH #87
+Training...
+Training LR: 0.000100, Training loss: 0.570023
+Training accuracy: 0.668787
+Validating...
+Validating loss: 0.574107
+Validating accuracy: 0.662350
+EPOCH #88
+Training...
+Training LR: 0.000100, Training loss: 0.571304
+Training accuracy: 0.667987
+Validating...
+Validating loss: 0.572215
+Validating accuracy: 0.664400
+EPOCH #89
+Training...
+Training LR: 0.000100, Training loss: 0.569158
+Training accuracy: 0.669538
+Validating...
+Validating loss: 0.567498
+Validating accuracy: 0.669950
+EPOCH #90
+Training...
+Training LR: 0.000100, Training loss: 0.569450
+Training accuracy: 0.670056
+Validating...
+Validating loss: 0.568070
+Validating accuracy: 0.671000
+EPOCH #91
+Training...
+Training LR: 0.000100, Training loss: 0.568742
+Training accuracy: 0.670713
+Validating...
+Validating loss: 0.571998
+Validating accuracy: 0.668950
+EPOCH #92
+Training...
+Training LR: 0.000100, Training loss: 0.568710
+Training accuracy: 0.670044
+Validating...
+Validating loss: 0.569903
+Validating accuracy: 0.665150
+EPOCH #93
+Training...
+Training LR: 0.000100, Training loss: 0.567314
+Training accuracy: 0.672350
+Validating...
+Validating loss: 0.563766
+Validating accuracy: 0.674100
+EPOCH #94
+Training...
+Training LR: 0.000100, Training loss: 0.569033
+Training accuracy: 0.668806
+Validating...
+Validating loss: 0.567990
+Validating accuracy: 0.667550
+EPOCH #95
+Training...
+Training LR: 0.000100, Training loss: 0.568981
+Training accuracy: 0.669913
+Validating...
+Validating loss: 0.572848
+Validating accuracy: 0.663400
+EPOCH #96
+Training...
+Training LR: 0.000100, Training loss: 0.568059
+Training accuracy: 0.670412
+Validating...
+Validating loss: 0.570626
+Validating accuracy: 0.666600
+EPOCH #97
+Training...
+Training LR: 0.000100, Training loss: 0.580197
+Training accuracy: 0.662719
+Validating...
+Validating loss: 0.679110
+Validating accuracy: 0.562800
+EPOCH #98
+Training...
+Training LR: 0.000100, Training loss: 0.609310
+Training accuracy: 0.634356
+Validating...
+Validating loss: 0.579263
+Validating accuracy: 0.658900
+EPOCH #99
+Training...
+Training LR: 0.000100, Training loss: 0.567430
+Training accuracy: 0.672550
+Validating...
+Validating loss: 0.570415
+Validating accuracy: 0.670700
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                                 : Sun Jul 24 05:02:25 2022
+Driver Version                            : 510.73.08
+CUDA Version                              : 11.6
+
+Attached GPUs                             : 1
+GPU 00000000:44:00.0
+    Accounting Mode                       : Enabled
+    Accounting Mode Buffer Size           : 4000
+    Accounted Processes
+        Process ID                        : 28864
+            GPU Utilization               : 71 %
+            Memory Utilization            : 57 %
+            Max memory usage              : 9017 MiB
+            Time                          : 23655262 ms
+            Is Running                    : 0
+
+Sun Jul 24 05:02:25 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.73.08    Driver Version: 510.73.08    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 8000     On   | 00000000:44:00.0 Off |                  Off |
+| 59%   71C    P0   112W / 260W |      1MiB / 49152MiB |     76%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+

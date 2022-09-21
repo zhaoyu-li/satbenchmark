@@ -1,0 +1,1 @@
+python generators/ca.py ~/satbenchmark/satbenchmark/external/ca1 10 --min_n 400 --max_n 1000 --min_c 20 --max_c 40

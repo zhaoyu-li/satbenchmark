@@ -4,6 +4,8 @@ import glob
 import pickle
 import subprocess
 import numpy as np
+import itertools
+import time
 
 from concurrent.futures.process import ProcessPoolExecutor
 
@@ -36,29 +38,36 @@ class Generator:
                 assignment.extend([int(s) for s in line.strip().split()[1:]])
             
             assignment = np.array(assignment[:-1]) > 0 # ends with 0
+
+        assignment_file = os.path.join(os.path.dirname(cnf_filepath), filename + '_assignment.pkl')
         
-        return assignment
+        with open(assignment_file, 'wb') as f:
+            pickle.dump(assignment, f)
 
         
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('input_dir', type=str)
+    parser.add_argument('splits', type=str, nargs='+')
     parser.add_argument('--n_process', type=int, default=32, help='Number of processes to run')
 
     opts = parser.parse_args()
 
     generater = Generator()
 
-    all_files = sorted(glob.glob(opts.input_dir + '/*.cnf', recursive=True))
+    all_files = [sorted(glob.glob(opts.input_dir + f'/{split}/*.cnf', recursive=True)) for split in opts.splits]
+    all_files = list(itertools.chain(*all_files))
+
     assert len(all_files) > 0
     all_files = [os.path.abspath(f) for f in all_files]
+
+    t = time.time()
     
     with ProcessPoolExecutor(max_workers=opts.n_process) as pool:
-        assignment = list(pool.map(generater.run, all_files))
+        pool.map(generater.run, all_files)
     
-    with open(os.path.join(opts.input_dir, 'assignment.pkl'), 'wb') as f:
-        pickle.dump(assignment, f)
-
+    print(time.time() - t)
+    
 
 if __name__ == '__main__':
     main()

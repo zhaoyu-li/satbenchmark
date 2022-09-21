@@ -45,6 +45,25 @@ def parse_cnf_file(file_path):
     return n_vars, clauses
 
 
+def parse_proof_file(file_path):
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+
+    learned_clauses = []
+    deleted_clauses = []
+
+    for line in lines:
+        tokens = line.strip().split()
+        if tokens[0] == 'd':
+            deleted_clause = [int(s) for s in tokens[1:-1]]
+            deleted_clauses.append(deleted_clause)
+        elif len(tokens) > 1: # discard empty clause
+            learned_clause = [int(s) for s in tokens[:-1]]
+            learned_clauses.append(learned_clause)
+    
+    return learned_clauses, deleted_clauses
+
+
 def literal2v_idx(literal):
     assert abs(literal) > 0
     sign = literal > 0
@@ -99,3 +118,7 @@ def set_seed(seed):
 def safe_log(t, eps=1e-10):
     t_clamp = t.clamp(min=eps)
     return t_clamp.log()
+
+
+def hash_clauses(clauses):
+    return [hash(frozenset(clause)) for clause in clauses]

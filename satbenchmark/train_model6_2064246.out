@@ -1,0 +1,42 @@
+slurmstepd: error: *** JOB 2064246 ON cn-c040 CANCELLED AT 2022-07-22T11:05:19 DUE TO TIME LIMIT ***
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                                 : Fri Jul 22 11:05:19 2022
+Driver Version                            : 510.73.08
+CUDA Version                              : 11.6
+
+Attached GPUs                             : 1
+GPU 00000000:C3:00.0
+    Accounting Mode                       : Enabled
+    Accounting Mode Buffer Size           : 4000
+    Accounted Processes
+        Process ID                        : 15565
+            GPU Utilization               : 68 %
+            Memory Utilization            : 40 %
+            Max memory usage              : 9287 MiB
+            Time                          : 0 ms
+            Is Running                    : 1
+
+Fri Jul 22 11:05:19 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.73.08    Driver Version: 510.73.08    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 8000     On   | 00000000:C3:00.0 Off |                  Off |
+| 41%   65C    P2   200W / 260W |   9290MiB / 49152MiB |     68%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     15565      C   python                           9287MiB |
++-----------------------------------------------------------------------------+

@@ -12,8 +12,8 @@ def _worker_init_fn(worker_id):
     random.seed(seed)
 
 
-def get_dataloader(data_dir, opts, mode):
-    dataset = SATDataset(data_dir, opts)
+def get_dataloader(data_dir, splits, opts, mode):
+    dataset = SATDataset(data_dir, splits, opts)
     return DataLoader(
         dataset,
         batch_size=opts.batch_size,

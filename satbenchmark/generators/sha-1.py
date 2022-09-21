@@ -59,7 +59,7 @@ def main():
     parser.add_argument('out_dir', type=str)
     parser.add_argument('n_instances', type=int)
 
-    parser.add_argument('--min_b', type=float, default=10)
+    parser.add_argument('--min_b', type=float, default=20)
     parser.add_argument('--max_b', type=float, default=40)
 
     parser.add_argument('--print_interval', type=int, default=1000)
